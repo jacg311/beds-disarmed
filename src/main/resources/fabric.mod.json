@@ -1,29 +1,32 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "beds_disarmed",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Beds Disarmed",
+  "description": "Easily Enable or Disable Bed Explosions via command or config file",
   "authors": [
-    "Me!"
+    "jacg"
   ],
   "contact": {
     "homepage": "https://fabricmc.net/",
     "sources": "https://github.com/FabricMC/fabric-example-mod"
   },
 
-  "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "license": "MIT",
+  "icon": "assets/beds_disarmed/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "net.jacg.beds_disarmed.BedsDisarmed"
+    ],
+    "preLaunch": [
+      "net.jacg.beds_disarmed.BedsDisarmedPreLaunch"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+      "beds_disarmed.mixins.json"
   ],
 
   "depends": {
@@ -31,8 +34,5 @@
     "fabric": "*",
     "minecraft": "~1.18.2",
     "java": ">=17"
-  },
-  "suggests": {
-    "another-mod": "*"
   }
 }
