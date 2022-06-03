@@ -14,7 +14,6 @@
   },
 
   "license": "MIT",
-  "icon": "assets/beds_disarmed/icon.png",
 
   "environment": "*",
   "entrypoints": {
